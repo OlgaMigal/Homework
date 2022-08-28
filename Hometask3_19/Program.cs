@@ -7,7 +7,7 @@
 Console.Write("Введите пятизначное число ");
 int number = Convert.ToInt32(Console.ReadLine());
 int num = number;
-if (number / 10000 < 10 && number / 10000 > 0)
+if (number < 100000 && number > 9999)
 {
     int num5 = num % 10;
     num /= 10;
