@@ -6,7 +6,7 @@
 
 string NumbersDigitsSum(int num)
 {
-    if(num<0)
+    if (num < 0)
     {
         return "Err";
     }
@@ -14,11 +14,11 @@ string NumbersDigitsSum(int num)
     {
         int i = 0;
         int result = 0;
-        while(num>0)
+        while (num > 0)
         {
-            result+=num%10;
-            num/=10;
-            i+=1;
+            result += num % 10;
+            num /= 10;
+            i += 1;
         }
         return $"Cумма цифр введённого числа = {result}";
     }

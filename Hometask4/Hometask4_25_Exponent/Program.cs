@@ -17,7 +17,7 @@ string Exponent(int num, int expo)
 }
 
 Console.WriteLine("Введите число и его степень: ");
-int number = int.Parse(Console.ReadLine( ));
+int number = int.Parse(Console.ReadLine());
 int exponenta = int.Parse(Console.ReadLine());
 
 Console.WriteLine(Exponent(number, exponenta));
