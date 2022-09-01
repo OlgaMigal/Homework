@@ -13,8 +13,9 @@
 
 void FillArray(int[] collection)
 {
+    int length = collection.Length;
     int i = 0;
-    while (i < 8)
+    while (i < length)
     {
         //не поняла, задать массив через метод вручную (коряво, да) или
         //псевдослучайными числами, поэтому сделала 2 варианта.
@@ -33,8 +34,9 @@ void FillArray(int[] collection)
 
 void PrintArray(int[] col)
 {
+    int count = col.Length;
     int pos = 0;
-    while (pos < 8)
+    while (pos < count)
     {
         Console.Write(col[pos] + " ");
         pos++;
@@ -43,6 +45,11 @@ void PrintArray(int[] col)
 
 //Запускаем метод заполнения для массива array, затем метод печати.
 // И перейдём на новую строку для красоты.
+
+//Альтернатива для ввода длины массива (но задача этого не подразумевает):
+// Console.Write("Введите длину массива: ");
+// int size = int.Parse(Console.ReadLine());
+// int[] array = new int[size];
 
 int[] array = new int[8];
 FillArray(array);
