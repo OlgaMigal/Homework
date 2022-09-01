@@ -10,11 +10,11 @@
 string Exponent(int num, int expo)
 {
     int result = num;
-    for(int i = 1; i<expo; i++)
+    for (int i = 1; i < expo; i++)
     {
-        result*=num;
+        result *= num;
     }
-    
+
     return $"{num} в степени {expo} = {result}";
 }
 
