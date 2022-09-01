@@ -14,8 +14,7 @@
 void FillArray(int[] collection)
 {
     int length = collection.Length;
-    int i = 0;
-    while (i < length)
+    for (int i = 0; i < length; i++)
     {
         //не поняла, задать массив через метод вручную (коряво, да) или
         //псевдослучайными числами, поэтому сделала 2 варианта.
@@ -26,7 +25,6 @@ void FillArray(int[] collection)
         // collection[i] = int.Parse(Console.ReadLine());
 
         collection[i] = new Random().Next(1, 10);
-        i++;
     }
 }
 
@@ -35,11 +33,9 @@ void FillArray(int[] collection)
 void PrintArray(int[] col)
 {
     int count = col.Length;
-    int pos = 0;
-    while (pos < count)
+    for(int pos = 0; pos < count; pos++)
     {
         Console.Write(col[pos] + " ");
-        pos++;
     }
 }
 
