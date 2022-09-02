@@ -3,7 +3,7 @@
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
 
-void Task34()
+void Task36()
 {
     int size = new Random().Next(10, 11);
     int[] array = new int[size];
@@ -42,4 +42,4 @@ void PrintArray(int[] array)
     Console.WriteLine("");
 }
 
-Task34();
+Task36();
