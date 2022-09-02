@@ -35,8 +35,8 @@ void FillArrayDouble(double[] array, double minNumber = 100.0, double maxNumber 
     Random random = new Random();
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = Math.Round((random.Next(Convert.ToInt32(minNumber), 
-        Convert.ToInt32(maxNumber-1)) + random.NextDouble()), 3);
+        array[i] = Math.Round((random.Next(Convert.ToInt32(minNumber),
+        Convert.ToInt32(maxNumber - 1)) + random.NextDouble()), 3);
     }
 }
 
