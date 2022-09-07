@@ -51,3 +51,20 @@ void PrintArray(double[] array)
 }
 
 Task38();
+
+// YGDragon
+// double DivMaxMin(double[] data, out double maxnum, out double minnum)
+// {
+//     maxnum = data[0];
+//     minnum = data[1];
+//     for (int i = 0; i < data.Length; i++)
+//     {
+//         maxnum = data[i] > maxnum ? data[i] : maxnum;
+//         minnum = data[i] < minnum ? data[i] : minnum;
+//     }
+//     return maxnum - minnum;
+// }
+
+// от Никиты
+
+
