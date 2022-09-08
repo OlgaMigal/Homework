@@ -4,12 +4,12 @@
 
 //void Task41()
 //{
-    Console.Write("Количество элементов будет равно ");
-    int m = int.Parse(Console.ReadLine());
-    int[] array = new int [m];
-    FillArray(array, m);
-    PrintArray(array);
-    PositiveCount(array);
+Console.Write("Количество элементов будет равно ");
+int m = int.Parse(Console.ReadLine());
+int[] array = new int[m];
+FillArray(array, m);
+PrintArray(array);
+PositiveCount(array);
 //}
 
 
@@ -38,7 +38,7 @@ void PositiveCount(int[] array)
     int positiveCount = 0;
     foreach (int value in array)
     {
-        positiveCount += value > 0 ? 1: 0;
+        positiveCount += value > 0 ? 1 : 0;
     }
     Console.WriteLine();
     Console.WriteLine($"Введено {positiveCount} чисел больше 0");
