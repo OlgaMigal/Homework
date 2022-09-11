@@ -47,7 +47,7 @@ void ReturnElementByPosition(int[,] collection)
     int n = int.Parse(Console.ReadLine());
     Console.WriteLine();
 
-    if (m > collection.GetLength(0) || n > collection.GetLength(1))
+    if (m >= collection.GetLength(0) || n >= collection.GetLength(1))
     {
         Console.WriteLine("Такого элемента в массиве нет");
     }
