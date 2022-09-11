@@ -50,7 +50,7 @@ void ArithmeticMeanOfColumn(int[,] collection)
         {
             sum = sum + collection[i, j];
         }
-        double arithmeticMean = Math.Round(Convert.ToDouble(sum / collection.GetLength(0)), 1);
+        double arithmeticMean = Math.Round((sum / collection.GetLength(0)), 1);
         Console.WriteLine($"Среднее арифметическое по столбцу {j} = {arithmeticMean}");
     }
 }
