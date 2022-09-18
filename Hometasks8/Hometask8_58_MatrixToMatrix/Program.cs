@@ -8,16 +8,16 @@
 // 15 18
 
 int lessNum = 1;
-int higherNum = 4;
-int oneSize = 2;
-int otherSize = 2;
+int higherNum = 9;
+int oneSide = 6;
+int otherSide = 5;
 
 
 void Task58()
 {
-    int[,] matrix = new int[oneSize, otherSize];
-    int[,] array = new int[otherSize, oneSize];
-    int[,] collection = new int[oneSize, otherSize];
+    int[,] matrix = new int[oneSide, otherSide];
+    int[,] array = new int[otherSide, oneSide];
+    int[,] collection = new int[oneSide, oneSide];
 
     FillArray(matrix);
     FillArray(array);
@@ -34,16 +34,21 @@ void Task58()
 // Умножение матриц:
 int[,] MatrixToMatrix(int[,] matr, int[,] arr, int[,] col)
 {
-            for (int i = 0; i < matr.GetLength(0); i++)
+    for (int i = 0; i < matr.GetLength(0); i++)
+    {
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            for (int k = 0; k < arr.GetLength(1); k++)
             {
-                for (int j = 0; j < matr.GetLength(1); j++)
+                int newElement = 0;
+                for (int m = 0; m < matr.GetLength(1); m++)
                 {
-                    for (int k = 0; k<matr.GetLength(0); k++)
-                    {
-                    col[i, j] += matr[i, k] * arr[k, i];
-                    }
+                    newElement += matr[i, m] * arr[m, j];
                 }
+                col[i, j] = newElement;
             }
+        }
+    }
     return col;
 }
 
