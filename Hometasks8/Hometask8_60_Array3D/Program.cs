@@ -10,11 +10,11 @@
 
 void Task60()
 {
-int[,,] array = new int[5, 3, 4];
-int[] numsUnic = UnicNumbers(array);
-//Console.WriteLine($"Нужно {numsUnic.Length} уникальных чисел"); // для проверки
-FillArray(array, numsUnic);
-PrintArray(array);
+    int[,,] array = new int[5, 3, 4];
+    int[] numsUnic = UnicNumbers(array);
+    //Console.WriteLine($"Нужно {numsUnic.Length} уникальных чисел"); // для проверки
+    FillArray(array, numsUnic);
+    PrintArray(array);
 }
 
 // Уникальные двузначные значения:
