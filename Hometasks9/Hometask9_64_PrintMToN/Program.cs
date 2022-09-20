@@ -26,10 +26,10 @@ void printMToN(int number1, int number2)
         }
     }
     else while (number1 >= number2)
-    {
-        Console.Write($"{number1} ");
-        number1--;
-    }
+        {
+            Console.Write($"{number1} ");
+            number1--;
+        }
     Console.WriteLine();
 }
 
