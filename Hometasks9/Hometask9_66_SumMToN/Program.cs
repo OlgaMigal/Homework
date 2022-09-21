@@ -6,9 +6,9 @@
 
 void Task66()
 {
-    int number1 = 3;//new Random().Next(1, 21);
+    int number1 = new Random().Next(1, 21);
     Console.WriteLine($"Число M = {number1}");
-    int number2 = 3; //new Random().Next(1, 21);
+    int number2 = new Random().Next(1, 21);
     Console.WriteLine($"Число N = {number2}");
     Console.WriteLine($"Сумма чисел от {number1} до {number2} = {RecursionSumMN(number1, number2)} ");
 }
