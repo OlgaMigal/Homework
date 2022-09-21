@@ -10,14 +10,14 @@ void Task66()
     Console.WriteLine($"Число M = {number1}");
     int number2 = new Random().Next(1, 21);
     Console.WriteLine($"Число N = {number2}");
-    Console.WriteLine($"Сумма чисел от {number1} до {number2} = {RecursionSumMN(number1, number2)} ");
+    Console.WriteLine($"Сумма чисел от {number1} до {number2} = {RecursionSumMToN(number1, number2)} ");
 }
 
-int RecursionSumMN(int m, int n)
+int RecursionSumMToN(int m, int n)
 {
     if (m == n) return m;
-    else if (m > n) return m + RecursionSumMN(m - 1, n);
-    return m + RecursionSumMN(m + 1, n);
+    else if (m > n) return m + RecursionSumMToN(m - 1, n);
+    return m + RecursionSumMToN(m + 1, n);
 }
 
 Task66();
