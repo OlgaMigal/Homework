@@ -4,33 +4,52 @@
 // M = 1; N = 5. -> ""1, 2, 3, 4, 5""
 // M = 4; N = 8. -> ""4, 6, 7, 8""
 
-
 void Task64()
 {
-    int m = new Random().Next(1, 21);
-    Console.WriteLine($"Число M = {m}");
-    int n = new Random().Next(1, 21);
-    Console.WriteLine($"Число N = {n}");
-    if (m == n) Console.WriteLine(n);
-    else printMToN(m, n);
+    int number1 = new Random().Next(1, 21);
+    Console.WriteLine($"Число M = {number1}");
+    int number2 = new Random().Next(1, 21);
+    Console.WriteLine($"Число N = {number2}");
+    Console.WriteLine($"{RecursionMN(number1, number2)} ");
 }
-// Вывод натуральных чисел
-void printMToN(int number1, int number2)
+
+string RecursionMN(int m, int n)
 {
-    if (number1 < number2)
-    {
-        while (number1 <= number2)
-        {
-            Console.Write($"{number1} ");
-            number1++;
-        }
-    }
-    else while (number1 >= number2)
-        {
-            Console.Write($"{number1} ");
-            number1--;
-        }
-    Console.WriteLine();
+    if (m == n) return m.ToString();
+    else if (m > n) return (m + " " + RecursionMN(m - 1, n) + " ");
+    return (m + " " + RecursionMN(m + 1, n) + " ");
 }
 
 Task64();
+
+
+
+// void Task64()
+// {
+//     int m = new Random().Next(1, 21);
+//     Console.WriteLine($"Число M = {m}");
+//     int n = new Random().Next(1, 21);
+//     Console.WriteLine($"Число N = {n}");
+//     if (m == n) Console.WriteLine(n);
+//     else printMToN(m, n);
+// }
+// // Вывод натуральных чисел
+// void printMToN(int number1, int number2)
+// {
+//     if (number1 < number2)
+//     {
+//         while (number1 <= number2)
+//         {
+//             Console.Write($"{number1} ");
+//             number1++;
+//         }
+//     }
+//     else while (number1 >= number2)
+//         {
+//             Console.Write($"{number1} ");
+//             number1--;
+//         }
+//     Console.WriteLine();
+// }
+
+// Task64();
